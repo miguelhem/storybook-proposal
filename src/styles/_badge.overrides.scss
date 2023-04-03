@@ -1,0 +1,96 @@
+@import "../../node_modules/bootstrap/scss/badge";
+@import "./colors.overrides";
+
+.badge {
+  color: $background-dark !important;
+  font-size: 1.4rem;
+  font-weight: 500;
+  min-height: 20px;
+  padding: 2px 8px;
+
+  .bi-circle-fill {
+    font-size: 1rem;
+  }
+}
+
+.text-bg-info {
+  background-color: $primary-lighter !important;
+
+  i {
+    color: $primary;
+  }
+}
+
+.text-bg-success {
+  background-color: $status-success-lighter !important;
+
+  i {
+    color: $status-success;
+  }
+}
+
+.text-bg-warning {
+  background-color: $status-warning-lighter !important;
+
+  i {
+    color: $status-warning;
+  }
+}
+
+.text-bg-danger {
+  background-color: $status-destructive-lighter !important;
+
+  i {
+    color: $status-destructive;
+  }
+}
+
+.text-bg-other {
+  background-color: $secondary-lighter !important;
+
+  i {
+    color: $secondary;
+  }
+}
+
+.no-bg-info {
+  color: $primary;
+  i {
+    color: inherit;
+  }
+}
+
+.no-bg-success {
+  color: $status-success;
+
+  i {
+    color: inherit;
+  }
+}
+
+.no-bg-warning {
+  color: $status-warning;
+
+  i {
+    color: inherit;
+  }
+}
+
+.no-bg-danger {
+  color: $status-destructive !important;
+  i {
+    color: inherit;
+  &::before {
+    content: '\f622';
+  }
+  }
+
+}
+
+.no-bg-other {
+  color: $secondary;
+  i {
+    color: inherit;
+  }
+}
+

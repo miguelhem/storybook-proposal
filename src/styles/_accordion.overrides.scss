@@ -1,0 +1,16 @@
+@import "../../node_modules/bootstrap/scss/accordion";
+@import "./colors.overrides";
+
+.accordion {
+  width: 550px;
+}
+
+.accordion-button {
+  font-size: 1.4rem;
+
+}
+
+.accordion-button:not(.collapsed) {
+    color: $text-body;
+    background-color: $white;
+}

@@ -1,0 +1,77 @@
+@import "../../node_modules/bootstrap/scss/alert";
+@import "./colors.overrides";
+
+.banner {
+  min-height: 120px;
+  position: relative;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+
+  &__info-icon {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .bi-x-lg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: $text-body;
+  }
+}
+
+.banner-sm {
+  @extend .banner;
+  max-width: 450px;
+}
+
+.banner-information {
+  background-color: $primary-lighter !important;
+
+    i {
+    color: $primary;
+  }
+
+}
+
+.banner-success {
+  background-color: $status-success-lighter !important;
+
+  i {
+    color: $status-success;
+  }
+}
+
+.banner-warning {
+  background-color: $status-warning-lighter !important;
+
+    i {
+    color: $status-warning;
+  }
+}
+
+.banner-critical {
+  background-color: $status-destructive-lighter !important;
+
+    i {
+    color: $status-destructive;
+  }
+}
+
+.banner-other {
+  background-color: $secondary-lighter !important;
+
+    i {
+    color: $secondary;
+  }
+}
+

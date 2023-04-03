@@ -1,0 +1,24 @@
+@import './colors.overrides';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Avenir Next", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  font-size: 1.4rem !important;
+  line-height: 2rem;
+  color: $text-body;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

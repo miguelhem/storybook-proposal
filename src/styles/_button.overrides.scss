@@ -1,0 +1,79 @@
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "./colors.overrides";
+
+.btn {
+  border-radius: 2px;
+  color: $white;
+  font-size: 1.4rem;
+
+
+  .btn-check:checked + &,
+  :not(.btn-check) + &:active,
+  &:first-child:active,
+  &.active,
+  &.show {
+      background: $primary-lighter;
+      color: $primary;
+  }
+
+    &-primary {
+    background: $primary;
+
+    i {
+     color: #fff;
+    }
+  }
+
+  &-secondary {
+    border: 1px solid $background-light;
+    background-color: $white;
+    color: $primary;
+
+    &:hover {
+      background: $background-light;
+      color: $primary;
+    }
+
+    &:disabled {
+      background: $background-light;
+      color: $body-color;
+      border: none;
+    }
+
+    i {
+     color: $primary;
+    }
+  }
+
+  &-danger {
+    background: $danger;
+
+    &:active {
+      background-color: shade-color($danger, 20%) !important;
+      color: $white !important;
+
+    }
+  }
+
+  &-outline-danger {
+    color: shade-color($danger, 20%) !important;
+
+    &:hover {
+      color: $white !important;
+    }
+
+    &:active {
+      color: shade-color($danger, 20%) !important;
+    }
+  }
+
+  &-lg {
+    font-size: 2rem;
+  }
+
+  &-sm {
+    font-size: 1rem;
+    height: 3rem;
+  }
+
+}
