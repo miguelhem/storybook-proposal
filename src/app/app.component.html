@@ -1,0 +1,164 @@
+<div class="container">
+
+  <div class="buttons">
+      <h1>Buttons</h1>
+
+      <button type="button" class="btn btn-primary">Primary</button>
+       <button type="button" class="btn btn-primary btn-lg">Large button</button>
+       <button type="button" class="btn btn-primary btn-sm">small button</button>
+      <button type="button" class="btn btn-primary" disabled>Disabled</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-secondary" disabled>Disabled</button>
+      <button type="button" class="btn btn-danger" disabled>Danger</button>
+      <button type="button" class="btn btn-outline-danger">Disabled</button>
+      <button type="button" class="btn btn-primary">
+
+        Notifications <span class="badge text-bg-other"><i class="bi bi-activity"></i></span>
+      </button>
+
+      <button type="button" class="btn btn-danger">
+        <span class="badge text-bg-other"><i class="bi bi-activity"></i></span> Notifications
+      </button>
+  </div>
+
+  <div class="accordion">
+  <h2>Accordion</h2>
+    <div class="accordion" id="accordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alerts">
+    <h3>Alerts</h3>
+    <adai-alert title='Success' icon='success'>
+      Action Successfull.
+    </adai-alert>
+    <adai-alert title='Information' icon='information'>
+      Some information goes here
+    </adai-alert>
+    <adai-alert title='Warning' icon='warning'>
+      Some Warning goes here
+    </adai-alert>
+    <adai-alert title='Critical' icon='critical'>
+      Some critical message goes here
+    </adai-alert>
+  </div>
+
+  <div class="banners">
+    <h3>Banners</h3>
+    <adai-banner title='Success' type='success'>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur vero hic dolor delectus numquam dolores eligendi deserunt itaque voluptas, nisi sit quidem explicabo unde alias ducimus qui veniam! Inventore.
+      <div class="button-group">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      </div>
+    </adai-banner>
+
+
+<adai-banner type="information" title="Information" size="normal">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur vero hic dolor delectus numquam dolores eligendi deserunt itaque voluptas, nisi sit quidem explicabo unde alias ducimus qui veniam! Inventore.
+  <div class="button-group">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+  </div>
+</adai-banner>
+
+    <adai-banner title='Information' type='information'>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur vero hic dolor delectus numquam dolores eligendi deserunt itaque voluptas, nisi sit quidem explicabo unde alias ducimus qui veniam! Inventore.
+    </adai-banner>
+
+    <adai-banner title='Warning' type='warning'>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur vero hic dolor delectus numquam dolores eligendi deserunt itaque voluptas, nisi sit quidem explicabo unde alias ducimus qui veniam! Inventore.
+    </adai-banner>
+
+    <adai-banner title='Critical Small' type='critical' size="sm">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur vero hic dolor delectus numquam dolores eligendi deserunt itaque voluptas, nisi sit quidem explicabo unde alias ducimus qui veniam! Inventore.
+      <div class="button-group">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      </div>
+    </adai-banner>
+
+    <adai-banner title='Information Small' type='information' size="sm">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur vero hic dolor delectus numquam dolores eligendi deserunt itaque voluptas, nisi sit quidem explicabo unde alias ducimus qui veniam! Inventore.
+      <div class="button-group">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      </div>
+    </adai-banner>
+
+    <adai-banner title='Success Small' type='success' size="sm">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur vero hic dolor delectus numquam dolores eligendi deserunt itaque voluptas, nisi sit quidem explicabo unde alias ducimus qui veniam! Inventore.
+      <div class="button-group">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      </div>
+    </adai-banner>
+
+    <adai-banner title='Warning Small' type='warning' size="sm">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur vero hic dolor delectus numquam dolores eligendi deserunt itaque voluptas, nisi sit quidem explicabo unde alias ducimus qui veniam! Inventore.
+      <div class="button-group">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      </div>
+    </adai-banner>
+
+    <adai-card></adai-card>
+    <adai-card type="project" [projectInformation]="projectInfo"></adai-card>
+    <adai-card
+    source="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+    type="project"
+    [projectInformation]="projectInfo2">
+    </adai-card>
+    <adai-card
+    source="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+    type="project"
+    [projectInformation]="projectInfo3">
+    </adai-card>
+    <adai-card
+    type="module"
+    [moduleInformation]="moduleInfo">
+    </adai-card>
+
+  <div class="badges">
+    <h3>Badges</h3>
+      <span class="badge rounded-pill">Neutral</span>
+      <span class="badge rounded-pill text-bg-info">Informational</span>
+      <span class="badge rounded-pill text-bg-success">Success</span>
+      <span class="badge rounded-pill text-bg-warning">Warning</span>
+      <span class="badge rounded-pill text-bg-danger">Danger</span>
+      <span class="badge rounded-pill text-bg-other">Other</span>
+      <span class="badge rounded-pill text-bg-warning">
+        <i class='bi bi-exclamation-triangle-fill'></i>
+        warning type
+      </span>
+      <span class="badge rounded-pill no-bg-danger">
+        <i class='bi bi-x-circle-fill'></i>
+        warning icon
+      </span>
+      <span class="badge rounded-pill text-bg-warning">
+        <i class="bi bi-circle-fill"></i>
+        warning dot
+      </span>
+  </div>
+</div>
+<adai-sidebar></adai-sidebar>
+
+
+
+
+
+
+
+

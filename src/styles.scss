@@ -1,0 +1,71 @@
+@import 'styles/custom.scss';
+
+// Theme colors - Can be used in components withouth importing scss file.
+
+:root {
+
+--navyblue: #072F55;
+--blue: #0053C7;
+--purple: #6124B2;
+--gray: #F5F7F9;
+--white: #FFFF;
+
+--primary: #0053C7;
+--primary-dark : #0A4CA8;
+--primary-darker: #094190;
+--primary-light: #D4E3F7;
+--primary-lighter: #094190;
+
+--secondary: #6124B2;
+--secondary-dark: #4F0AA8;
+--secondary-darker: #430990;
+--secondary-light: #E3D4F7;
+--secondary-lighter: #F4EEFC;
+
+--background-dark: #052542;
+--background-content: #F9FAFB;
+--background-light: #E0E5EB;
+--background-lighter: #F6F7F9;
+
+--text-heading: #010F23;
+--text-body: #47566B;
+--text-caption: #5E718D;
+--text-disabled: #A3B0C2;
+
+--icon-primary: #0053C7;
+--icon-dark: #010F23;
+--icon-subtle: #5E718D;
+--icon-disabled: #A3B0C2;
+
+--decorative-purple: #88379D;
+--decorative-purple-light: #F3DDF9;
+--decorative-purple-lighter: #F9EEFC;
+--decorative-teal: #0EB29B;
+--decorative-teal-light: #E5F1EF;
+--decorative-teal-lighter: #F2F8F7;
+--decorative-new: #71BE39;
+--decorative-new-light: #E9F9DD;
+--decorative-green-lighter: #F4FCEE;
+--decorative-lightblue: #199FDA;
+--decorative-lightblue-light: #DDF1F9;
+--decorative-lightblue-lighter: #EEF8FC;
+--decorative-magenta: #EB1476;
+--decorative-magenta-light: #F9DDE9;
+--decorative-magenta-lighter: #FCEEF4;
+
+--status-warning: #C74723;
+--status-warning-light: #FEE2D5;
+--status-warning-lighter: #FCF2EE;
+--status-destructive: #BA1E2E;
+--status-destructive-light: #F9DDDF;
+--status-destructive-lighter: #FCEEEF;
+--status-success: #199951;
+--status-success-light: #E5F1E9;
+--status-success-lighter: #F2F8F4;
+--status-information: #2768AE;
+--status-information-light: #DDEAF9;
+--status-information-lighter: #EEF5FC;
+--status-new: #6124B2;
+--status-new-light: #E9DDF9;
+--status-new-lighter: #F4EEFC;
+}
