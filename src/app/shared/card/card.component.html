@@ -1,0 +1,70 @@
+    <div class="card">
+      <span
+        class="card-badge"
+        [@clickAnimation]="animationState"
+        (click)="onFavorite()">
+        <i [ngClass]="[isFavorite ? 'bi bi-star-fill' : 'bi bi-star']"></i></span>
+      <img *ngIf="source" [src]="source" class="card-img-top" [alt]="projectInformation.projectName">
+      <span *ngIf="!source" class="card-img-top">
+        <i [ngClass]="type === 'project' ? 'bi bi-buildings' : (type === 'module' ? 'bi bi-collection-fill' : 'bi bi-folder-fill')">
+        </i></span>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" [ngStyle]="{'width': progress + '%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="card-body" [ngSwitch]="type">
+
+        <div *ngSwitchCase="'default'">
+          <div class="card-title">
+            <h4 class="card-text">Folder Name</h4>
+            <span><i class="bi bi-three-dots"></i></span>
+          </div>
+          <div class="folder-info">
+            <p>{{ projectsCount }} Projects</p>
+            <span><i class="bi bi-dot"></i></span>
+            <p>{{ modulesCount }} Modules</p>
+          </div>
+        </div>
+
+        <div *ngSwitchCase="'project'">
+          <div class="card-title">
+            <h4 class="card-text">{{projectInformation.projectName}}</h4>
+            <span><i class="bi bi-three-dots"></i></span>
+          </div>
+          <div class="project-info">
+            <p>{{ projectInformation.projectCity }}</p>
+            <div class="project-info__badges">
+              <span class="badge rounded-pill text-bg-info">{{projectInformation.projectStatus}}</span>
+              <span class="badge rounded-pill no-bg-danger">{{projectInformation.paymentStatus}}</span>
+              <div *ngIf="projectInformation.rating" class="project-info__rating">
+                <ng-container *ngFor="let star of [1, 2, 3]; let i = index">
+                  <span>
+                    <i [ngClass]="isStarFilled(i) ? 'bi bi-star-fill' : 'bi bi-star'"></i>
+                  </span>
+                </ng-container>
+              </div>
+          </div>
+        </div>
+      </div>
+
+        <div *ngSwitchCase="'module'">
+          <div class="card-title">
+            <h4 class="card-text">{{moduleInformation.moduleName}}</h4>
+            <span><i class="bi bi-three-dots"></i></span>
+          </div>
+          <div class="project-info">
+            <p>{{ moduleInformation.viralResponse }}</p>
+            <div class="project-info__badges">
+              <span class="badge rounded-pill text-bg-info">{{moduleInformation.moduleStatus}}</span>
+              <span class="badge rounded-pill no-bg-danger">{{moduleInformation.paymentStatus}}</span>
+
+              <div *ngIf="moduleInformation.rating" class="project-info__rating">
+                <ng-container *ngFor="let star of [1, 2, 3]; let i = index">
+                  <span>
+                    <i [ngClass]="isStarFilled(i) ? 'bi bi-star-fill' : 'bi bi-star'"></i>
+                  </span>
+                </ng-container>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>

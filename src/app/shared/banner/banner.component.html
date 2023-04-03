@@ -1,0 +1,12 @@
+<div [ngClass]="classes" role="alert">
+  <i class="bi bi-x-lg"></i>
+  <div class="banner__info">
+    <div class="banner__info-icon">
+      <i [ngClass]="iconClass"></i>
+      <h4>{{ title }}</h4>
+    </div>
+    <p>
+      <ng-content></ng-content>
+    </p>
+  </div>
+</div>

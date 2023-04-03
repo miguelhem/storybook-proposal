@@ -1,0 +1,29 @@
+<section [ngClass]="[sidebarOpen ? 'sidebar' : 'sidebar-closed']" [@sidebarAnimation]="sidebarState">
+  <div class="sidebar-header">
+    <img *ngIf="!sidebarOpen" src="assets/fitwel-icon.svg">
+    <img *ngIf="sidebarOpen"src="assets/fitwel-logo.svg">
+    <span *ngIf="!sidebarOpen" (click)="onSidebarOpen()"><i class="bi bi-arrow-bar-right"></i></span>
+    <span *ngIf="sidebarOpen" (click)="onSidebarOpen()"><i class="bi bi-arrow-bar-left"></i></span>
+  </div>
+    <ul class="sidebar-items list-unstyled">
+    <li class="sidebar-items--item" [ngClass]="{'active': selectedItem === i}" (click)="listClick($event, i)" *ngFor="let item of menuItems; index as i">
+      <span><i class="{{ item.icon }}"></i></span>
+      <p *ngIf="sidebarOpen">{{ item.name }}</p>
+    </li>
+  </ul>
+  <div class="sidebar-footer">
+    <div class="footer-info">
+      <div class="footer-avatar">
+        <img *ngIf="avatarUrl" [src]="avatarUrl" alt="John Doe">
+        <span *ngIf="!avatarUrl"><i class="bi bi-person"></i></span>
+      </div>
+      <div *ngIf="sidebarOpen" class="footer-text">
+        <h4>John Doe</h4>
+        <p>Acme X</p>
+      </div>
+    </div>
+    <div *ngIf="sidebarOpen" class="footer-icon">
+      <i class="bi bi-three-dots"></i>
+    </div>
+  </div>
+</section>

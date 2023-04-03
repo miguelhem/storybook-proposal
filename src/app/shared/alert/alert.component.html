@@ -1,0 +1,12 @@
+<div class="alert" role="alert">
+  <div class="alert__info">
+    <div class="alert__info-icon">
+      <i [ngClass]="getIconClass(icon)"></i>
+      <h4>{{ title }}</h4>
+    </div>
+    <p>
+      <ng-content></ng-content>
+    </p>
+  </div>
+    <i class="bi bi-x-lg"></i>
+</div>
